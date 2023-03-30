@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class=" navbar bg-info-subtle">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"> 3° Ano </a>
+
+            </div>
+
+        </nav>
+    </header>
+    <hr>
+    <ul class="mensagemErro list-group"></ul>
+    <section class="container">
+        <div class="w-75 m-auto bg-body-secondary p-5 rounded-3">
+            <h3>Preencha os dados para criar um colaborador</h3>
+            <form class="formADD">
+                <div class="mb-3">
+                    <label for="nome" class="form-label"> Nome:</label>
+                    <input id="nome" name="nome" type="text" class="form-control">
+
+                </div>
+                <div class="mb-3">
+                    <label for="cargo" class="form-label"> Cargo:</label>
+                    <input id="cargo" name="cargo" type="text" class="form-control">
+
+                </div>
+                <div class="mb-3">
+                    <label for="imagem" class="form-label"> Foto:</label>
+                    <input id="imagem" name="imagem" type="file" class="form-control">
+
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label"> Time:</label>
+                    <select name="time" id="time" class="form-select">
+                        <option selected disabled> Selecione o seu time</option>
+                        <option value="fullStack"> Desenvolvedor Full-Stack</option>
+                        <option value="frontEnd">Front-End</option>
+                        <option value="BackEnd">Back-End</option>
+                        <option value="dataScience">Data-Science</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="uxEDesign">Ux e Design</option>
+                    </select>
+                </div>
+                <button type="submit" id="botaoAdicionar" class="btn btn-primary btn-lg w-25">Enviar</button>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="container p-5">
+        <h2 class="text-center text-primary"> Minha Equipe</h2>
+    </section>
+    <section class="bg-success-subtle w-100">
+        <div class="container">
+            <h3 class="text-center text-success mb-5">Full-Stack</h3>
+            <div class="row fullStack">
+                <div class="col-md-3">
+                    <figure class="card">
+                        <img src="assets/img/tony.webp" class="rounded-quadrado">
+                        <figcaption>
+                            <h4 class="text-success text-center">tony</h4>
+                            <p class="text-success text-center">Full-Stack Developer</p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary-subtle w-100">
+        <div class="container">
+            <h3 class="text-center text-primary mb-5">Front-End</h3>
+            <div class="row frontEnd">
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-warning-subtle w-100">
+        <div class="container">
+            <h3 class="text-center text-warning mb-5">Back-End</h3>
+            <div class="row Back-End">
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-danger-subtle w-100">
+        <div class="container">
+            <h3 class="text-center text-danger mb-5">Data-Science</h3>
+            <div class="row dataScience">
+
+            </div>
+        </div>
+
+    </section>
+    <section class="bg-secondary-subtle w-100">
+        <div class="container">
+            <h3 class="text-center text-secondary mb-5">Mobile</h3>
+            <div class="row mobile">
+
+            </div>
+        </div>
+
+    </section>
+    </section>
+    <section class="bg-info-subtle w-100">
+        <div class="container">
+            <h3 class="text-center text-info mb-5">Ux e Desing</h3>
+            <div class="row uxEDesign">
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!---------------------- links js--------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
